@@ -1,0 +1,17 @@
+version: '3.11'
+
+x-service: &service
+    build: .
+    image: newrelic-playground
+    volumes:
+      - ./:/app:rw,cached
+    environment:
+      # preserve bash history from devcontainer
+      - PROMPT_COMMAND=history -a
+      - HISTFILE=/app/.bash-history
+    env_file:
+    - .env
+
+services:
+  dev:
+    <<: *service

@@ -1,0 +1,16 @@
+{
+    "name": "newrelic-playground",
+    "dockerComposeFile": [
+      "docker-compose.yml"
+    ],
+    "service": "dev",
+    "workspaceFolder": "/app",
+    "settings": {},
+    "extensions": [
+      "felixfbecker.php-debug",
+      "bmewburn.vscode-intelephense-client",
+      "ms-azuretools.vscode-docker",
+      "eamodio.gitlens",
+    ],
+    "overrideCommand": true
+}
